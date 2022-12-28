@@ -52,7 +52,7 @@ def two_break_distance(P, Q, maxSynteny):
   
   return maxSynteny - nCycle
 
-fn = "dataset_288_4.txt"
+fn = "test_result.txt"
 f = open(f"./data/{fn}", "r")
 reads = f.readline().strip().lstrip('(').rstrip(')').split(')(')
 P = [ list(map(int, read.split())) for read in reads ]

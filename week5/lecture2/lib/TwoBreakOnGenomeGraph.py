@@ -15,15 +15,10 @@ def two_break_on_genome_graph(GenomeGraph, i1, i2, i3, i4):
       e1i = i
     elif ele == [i3, i4]:
       e2i = i
-    print(ele)
-  print(e1i, e2i, i1, i2, i3, i4, GenomeGraph)
   GenomeGraph[e1i][1] = i3
   GenomeGraph[e2i][0] = i2
-  print(e1i, e2i, i1, i2, i3, i4, GenomeGraph)
 
   return GenomeGraph
-  result_graph = [ ", ".join(list(map(str, ele))) for ele in GenomeGraph]
-  return "(" + "), (".join(result_graph) + ")"
 
 # fn = "1.txt"
 # fn = "dataset_8224_2.txt"
